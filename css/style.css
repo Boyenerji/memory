@@ -3,8 +3,18 @@
     padding: 0;
 }
 
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
 #test {
-    max-width: 500px;
+    width: 100%;
     height: 150px;
     margin: 20px auto;
     font-size: 2.8em;
@@ -16,11 +26,10 @@
 }
 
 #testPole {
-    max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 10px;
 }
 
 input[type="text"] {
@@ -35,18 +44,17 @@ input[type="submit"] {
 
 @media screen and (max-width: 600px) {
     #test {
-        font-size: 1.7em;
-        margin: 20px 10px;
+        font-size: 2.1em;
     }
 
     input[type="text"] {
         padding: 5px;
-        font-size: 2.0em;
+        font-size: 1.5em;
     }
 
     input[type="submit"] {
-        padding: 10px;
-        font-size: 2.0em;
+        padding: 7px;
+        font-size: 1.5em;
     }
 
   }
