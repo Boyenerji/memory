@@ -4,28 +4,49 @@
 }
 
 #test {
-    width: 500px;
+    max-width: 500px;
     height: 150px;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: 2.8em;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: -1px 2px 8px 4px rgba(34, 60, 80, 0.2);
 }
 
 #testPole {
+    max-width: 500px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 0 10px;
 }
 
 input[type="text"] {
-    padding: 15px;
+    padding: 10px;
     font-size: 2.0em;
 }
 
 input[type="submit"] {
-    padding: 12px;
+    padding: 10px;
     font-size: 2.0em;
 }
 
+@media screen and (max-width: 600px) {
+    #test {
+        font-size: 1.7em;
+        margin: 20px 10px;
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        font-size: 2.0em;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        font-size: 2.0em;
+    }
+
+  }
