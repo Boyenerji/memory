@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#test {
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    font-size: 2.8em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testPole {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 15px;
+    font-size: 2.0em;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    font-size: 2.0em;
+}
+
