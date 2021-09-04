@@ -118,12 +118,9 @@ setTimeout(() => document.getElementById('test').innerHTML += `Сколько б
 
 
 setTimeout(function() {
-    let testText = document.getElementById('test').innerHTML;
-    if (testText == 'Сколько было в 🔍' || testText == 'Сколько было в 🔥' || testText == 'Сколько было в 🔒') {
-        for (let indexTwo = 0; indexTwo < arrKnopki.length; indexTwo++) {
-            document.getElementById('testPole').innerHTML += arrKnopki[indexTwo].numberOne;
-        }   
-    }
+    for (let indexTwo = 0; indexTwo < arrKnopki.length; indexTwo++) {
+        document.getElementById('testPole').innerHTML += arrKnopki[indexTwo].numberOne;
+    } 
 }, 7700);
 
 
@@ -135,12 +132,7 @@ function check(elem) {
     complete++;
     // let input = document.querySelectorAll('input');
     let input = elem.value;
-
-    console.log(elem);
-
     let text = document.getElementById('test').innerHTML;
-    console.log(text);
-
 
     if (text == 'Сколько было в 🔍') {
         for (let index = 0; index < arrFive.length; index++) {
